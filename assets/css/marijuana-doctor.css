@@ -1,0 +1,792 @@
+:root {
+  --secclr: #56c4c1;
+  --tealclr: #62c4af;
+  --whiteclr: #ffffff;
+  --transclr: rgba(0, 0, 0, 0);
+  --fullwdh: 100%;
+  --fullvh: 100vh;
+  --fullvw: 100vw;
+  --font: "Poppins", sans-serif;
+  --subtitleclr: #48b99e;
+  --paraclr: #616161;
+  --headingclr: #00311d;
+  --subheadingpara: #2f2f2f;
+  --subheadingparasize: 1.6rem;
+  --subheadingparaweight: 400;
+  --lightteal: #70e2ca;
+}
+*,
+body,
+html {
+  font-family: var(--font);
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  scroll-behavior: smooth;
+}
+::-moz-selection {
+  background-color: var(--secclr);
+  color: var(--whiteclr);
+}
+::selection {
+  background-color: var(--secclr);
+  color: var(--whiteclr);
+}
+::-moz-selection {
+  background-color: var(--secclr);
+  color: var(--whiteclr);
+}
+#marijuana__doctor__banner {
+  background-image: -webkit-image-set(
+    url("../img/jpg/marijuana-doctor/01.png") 1x,
+    url("../img/jpg/marijuana-doctor/01.png") 1.5x,
+    url("../img/jpg/marijuana-doctor/01.png") 2x
+  );
+  background-image: image-set(
+    url("../img/jpg/marijuana-doctor/01.png") 1x,
+    url("../img/jpg/marijuana-doctor/01.png") 1.5x,
+    url("../img/jpg/marijuana-doctor/01.png") 2x
+  );
+  background-image: url("../img/webp/marijuana-doctor/01.webp");
+  background-image: -webkit-image-set(
+    url("../img/webp/marijuana-doctor/01.webp") 1x,
+    url("../img/webp/marijuana-doctor/01.webp") 1.5x,
+    url("../img/webp/marijuana-doctor/01.webp") 2x
+  );
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  height: calc(var(--fullvh) + 15vh);
+  overflow: hidden;
+  align-items: center;
+  width: var(--fullwdh);
+  z-index: 2;
+  background-color: #56cac4;
+}
+section#marijuana__doctor__banner > .container,
+section#marijuana__doctor__banner > .container .row {
+  height: 95%;
+  height: calc(var(--fullvh) + 2vh);
+}
+#marijuana__doctor__banner h1 {
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: inherit;
+  color: var(--whiteclr);
+  font-size: 7rem;
+  font-weight: 800;
+  line-height: 1.12em;
+}
+#marijuana__doctor__banner h1 span {
+  color: var(--whiteclr);
+  font-size: 7rem;
+  font-weight: 800;
+  line-height: 0.91em;
+  text-align: center;
+  width: var(--fullwdh);
+  float: left;
+}
+
+#marijuana__doctor__banner p {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  margin-bottom: 2rem 0;
+  font-weight: var(--subheadingparaweight);
+  color: var(--whiteclr);
+  width: var(--fullwdh);
+  float: left;
+}
+
+a.btn.my__glb__btn.my__rounded {
+  position: relative;
+  border-radius: 5rem;
+  outline: 0;
+  border: 1px solid #44aeb1;
+  background: #3abcbf;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  -webkit-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+a.btn.my__glb__btn.my__rounded::before {
+  -webkit-transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5rem;
+  width: 31%;
+  background: var(--tealclr);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(64 64 64)),
+    color-stop(100%, rgba(29 31 31))
+  );
+  background: -o-linear-gradient(left, rgba(64 64 64) 0%, rgba(29 31 31) 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(64 64 64)),
+    to(rgba(29 31 31))
+  );
+  background: linear-gradient(to right, rgb(29 31 31) 0%, rgb(64 64 64) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4adec3', endColorstr='#23c4ec', GradientType=1);
+}
+span.text-teal {
+  color: #ffffff;
+  mix-blend-mode: color-dodge;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+}
+a.btn.my__glb__btn.my__rounded:hover {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25),
+    0.8rem 1.4rem 2rem 0.1rem rgb(7 206 194/12%),
+    0.6rem 0.9rem 2rem rgb(0 0 0/13%);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25),
+    0.8rem 1.4rem 2rem 0.1rem rgb(7 206 194/12%),
+    0.6rem 0.9rem 2rem rgb(0 0 0/13%);
+}
+a.btn.my__glb__btn.my__rounded:hover::before {
+  background: var(--tealclr);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(29 31 31)),
+    color-stop(100%, rgba(64 64 64))
+  );
+  background: -o-linear-gradient(left, rgba(29 31 31) 0%, rgba(64 64 64) 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(29 31 31)),
+    to(rgba(64 64 64))
+  );
+  background: linear-gradient(to right, rgba(29 31 31) 0%, rgba(64 64 64) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4adec3', endColorstr='#23c4ec', GradientType=1);
+  width: 100%;
+}
+.heading_line {
+  background-clip: padding-box;
+  border: solid 0.2rem transparent;
+  position: relative;
+  width: calc(var(--fullwdh) - 80%);
+  float: none;
+  display: inline-block;
+  border-radius: 1rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  margin-bottom: 2rem;
+  font-weight: var(--subheadingparaweight);
+  color: var(--subheadingpara);
+  width: var(--fullwdh);
+  float: left;
+}
+#section__01 {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0rem 0 8rem;
+}
+#section__01 .h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875em;
+  color: #3d8082;
+}
+#section__01 p {
+  color: var(--subheadingpara);
+}
+#section__02 {
+  padding: 6rem 0 8rem;
+  position: relative;
+  z-index: 3;
+}
+#section__02 .image__container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 2rem;
+  width: 41%;
+  top: 0;
+}
+#section__02 .image__container img {
+  width: 100%;
+}
+#section__01 .h2,
+#section__02 .h2,
+#section__03 .h2,
+#section__04 .h2,
+#section__05 .h2,
+#section__005 .h2 {
+  line-height: 3.7rem;
+  margin-bottom: 3.5rem;
+  letter-spacing: 0.1px;
+  color: var(--headingclr);
+  margin: 0;
+  width: var(--fullwdh);
+  float: left;
+  font-size: 3.4rem;
+}
+#section__03 {
+  padding: 2rem 0 3rem;
+  position: relative;
+  z-index: 2;
+  background: #fff;
+}
+#section__03:after {
+  content: url(../img/svg/bgcircle.svg);
+  width: 78rem;
+  height: 80rem;
+  background: rgb(174 249 224/20%);
+  position: absolute;
+  border-radius: 50%;
+  left: -7rem;
+  top: calc(var(--fullvh) - 109vh);
+  -webkit-animation: movee infinite 12s;
+  animation: movee infinite 12s;
+  z-index: 1;
+}
+@-webkit-keyframes movee {
+  0% {
+    -webkit-transform: translateY(0) translateX(0) rotate(94deg);
+    transform: translateY(0) translateX(0) rotate(94deg);
+  }
+  50% {
+    -webkit-transform: translateY(-2rem) translateX(1rem) rotate(94deg);
+    transform: translateY(-2rem) translateX(1rem) rotate(94deg);
+  }
+  100% {
+    -webkit-transform: translateY(0) translateX(0) rotate(94deg);
+    transform: translateY(0) translateX(0) rotate(94deg);
+  }
+}
+@keyframes movee {
+  0% {
+    -webkit-transform: translateY(0) translateX(0) rotate(94deg);
+    transform: translateY(0) translateX(0) rotate(94deg);
+  }
+  50% {
+    -webkit-transform: translateY(-2rem) translateX(1rem) rotate(94deg);
+    transform: translateY(-2rem) translateX(1rem) rotate(94deg);
+  }
+  100% {
+    -webkit-transform: translateY(0) translateX(0) rotate(94deg);
+    transform: translateY(0) translateX(0) rotate(94deg);
+  }
+}
+#section__03 .pre_column-inner_left > span {
+  color: var(--subtitleclr);
+  font-size: 1.6rem;
+  font-weight: bolder;
+  width: var(--fullwdh);
+  float: left;
+  letter-spacing: 2.5px;
+}
+
+#section__03 .content_box {
+  width: var(--fullwdh);
+  float: left;
+  border-style: solid;
+  border-color: transparent;
+  z-index: 3;
+  position: relative;
+  -webkit-transition: all ease-out 0.2s;
+  -o-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border-width: 0 0 0.4rem;
+  -webkit-box-shadow: 0rem 1.5rem 4rem 0rem rgb(21 21 21/11%);
+  box-shadow: 0rem 1.5rem 4rem 0rem rgb(21 21 21/11%);
+  padding: 3.5rem 3rem;
+}
+#section__03 .content_box:hover {
+  border-color: var(--subtitleclr);
+  border-width: 0 0 0.4rem;
+  -webkit-transform: translateY(-1rem);
+  -ms-transform: translateY(-1rem);
+  transform: translateY(-1rem);
+}
+
+#section__04 {
+  padding: 0 0 7rem;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  overflow: hidden;
+  background: #0f1a26;
+}
+
+#section__04 .shape3-top.shape3-top {
+  background-image: -webkit-image-set(
+    url(../img/jpg/shape3-top@2x.png) 1x,
+    url(../img/jpg/shape3-top@2x.png) 1.5x,
+    url(../img/jpg/shape3-top@2x.png) 2x
+  );
+  background-image: image-set(
+    url(../img/jpg/shape3-top@2x.png) 1x,
+    url(../img/jpg/shape3-top@2x.png) 1.5x,
+    url(../img/jpg/shape3-top@2x.png) 2x
+  );
+  background-image: url(../img/webp/shape3-top@2x.webp);
+  background-image: -webkit-image-set(
+    url(../img/webp/shape3-top@2x.webp) 1x,
+    url(../img/webp/shape3-top@2x.webp) 1.5x,
+    url(../img/webp/shape3-top@2x.webp) 2x
+  );
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 17.1875rem;
+  z-index: 2;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 4rem;
+}
+#section__04 .h2 {
+  color: var(--whiteclr);
+}
+#section__04 p {
+  color: var(--whiteclr);
+}
+
+#section__05 {
+  padding: 8rem 0 0rem;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+#section__005 {
+  padding: 0rem 0 8rem;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+#section__06 {
+  padding: 8rem 0 8rem 0;
+  position: relative;
+  background-color: #ffffff !important;
+  z-index: 2;
+}
+#section__06 .left__box span {
+  color: #10251c;
+  font-size: 1.6rem;
+  font-weight: 500;
+  width: var(--fullwdh);
+  float: left;
+  text-decoration: none;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+#section__06 .circle {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  background: #65c4a8;
+  left: 0;
+  right: 0;
+  bottom: 1.7rem;
+  border-radius: 50%;
+  margin: auto;
+  -webkit-animation: movee infinite 12s;
+  animation: movee infinite 12s;
+}
+#section__06 .image__container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: auto 0;
+  overflow: hidden;
+  padding-top: 2rem;
+  width: 45%;
+  z-index: 3;
+}
+#section__06 .image__container img {
+  width: 80%;
+  float: right;
+  -webkit-transform: rotateX(360deg) rotateY(180deg);
+  transform: rotateX(360deg) rotateY(180deg);
+}
+#section__06 h3 {
+  line-height: 3.7rem;
+  margin-bottom: 3.5rem;
+  font-size: 2.9rem;
+  letter-spacing: 0.1px;
+  color: var(--paraclr);
+  margin: 0 0 0;
+  width: var(--fullwdh);
+  float: left;
+}
+#section__06 .left__box li {
+  width: var(--fullwdh);
+  float: left;
+  -webkit-box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.1),
+    0 0.2rem 0.6rem rgba(0, 0, 0, 0.03);
+  box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.1), 0 0.2rem 0.6rem rgba(0, 0, 0, 0.03);
+  background-color: #ffffff !important;
+  padding: 1.5rem !important;
+  border-radius: 0.25rem !important;
+  margin-top: 1rem;
+}
+#section__06 .left__box a,
+#section__06 .left__box span {
+  color: #10251c;
+  font-size: 1.6rem;
+  font-weight: 500;
+  width: var(--fullwdh);
+  float: left;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+#section__06 p {
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  margin-bottom: 2rem;
+  width: var(--fullwdh);
+  float: left;
+  font-weight: var(--subheadingparaweight);
+  color: var(--subheadingpara);
+}
+#section__06 p a {
+  font-style: normal;
+  font-size: 1.7rem;
+  line-height: 2.8rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: var(--paraclr);
+  position: relative;
+  z-index: 1;
+  width: auto;
+}
+#section__06 ul a.active span {
+  position: relative;
+  z-index: 2;
+}
+#section__06 .active {
+  position: relative;
+}
+#section__06 ul .active:after {
+  background: rgb(166 226 219);
+  content: "";
+  position: absolute;
+  height: 1.1rem;
+  left: 0.6rem;
+  width: 80%;
+  z-index: 1;
+  top: 1.2rem;
+}
+#section__06 .tab-content {
+  float: left;
+  height: 30rem;
+  width: 100%;
+  overflow-y: scroll;
+  padding-right: 3rem;
+  position: relative;
+  z-index: 4;
+}
+#section__06 .tab-content p {
+  text-align: justify;
+}
+#section__06 .tab-content::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0.6rem rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+#section__06 .tab-content::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #f5f5f5;
+}
+#section__06 .tab-content::-webkit-scrollbar-thumb {
+  background-color: #48b99e;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+#section__06 p a:after {
+  background: rgb(207, 234, 231);
+  content: "";
+  position: absolute;
+  height: 1.5rem;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  top: 1.2rem;
+}
+#section__06 .fade.in {
+  opacity: 1;
+}
+#section__06 .imgbx {
+  width: 100%;
+  float: left;
+}
+#section__06 .imgbx img {
+  width: 100%;
+  float: left;
+}
+#section__06 .contentbxx {
+  width: 100%;
+  float: right;
+}
+#section__06 .col-lg-3.left__box + div + div {
+  -ms-flex: 0 0 25%;
+  -webkit-box-flex: 0;
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.my__glb__btn {
+  font-weight: 500;
+  padding: 1.4rem 3.5rem;
+  border-radius: 5rem;
+  border-color: rgb(255 255 255/0%);
+}
+.heading_line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  margin: -0.2rem;
+  border-radius: inherit;
+  background: -o-linear-gradient(left, rgb(107 197 164/13%), #62c4af);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgb(107 197 164/13%)),
+    to(#62c4af)
+  );
+  background: linear-gradient(to right, rgb(107 197 164/13%), #62c4af);
+}
+@media screen and (min-device-width: 280px) and (max-device-width: 768px) and (orientation: portrait) {
+  #section__03 .content_box {
+    margin-bottom: 2rem;
+  }
+  p {
+    text-align: justify;
+  }
+  #section__03 {
+    overflow: hidden;
+  }
+  #marijuana__doctor__banner {
+    background-size: 100%;
+    height: 430px;
+    background: #56cac4;
+    border-bottom-right-radius: 71px;
+  }
+  section#marijuana__doctor__banner > .container,
+  section#marijuana__doctor__banner > .container .row {
+    height: 103%;
+    height: 442px;
+  }
+  #marijuana__doctor__banner p {
+    font-size: 1.6rem;
+    margin-top: 6px;
+    text-align: center;
+  }
+  #marijuana__doctor__banner .content__box {
+    padding: 0 2rem;
+  }
+  #marijuana__doctor__banner h1 {
+        font-size: 2.2rem;
+    line-height: 3.2rem;
+  }
+  #marijuana__doctor__banner h1 span {
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+  }
+  #section__01,
+  #section__03 {
+    padding: 5rem 0 5rem;
+  }
+  #section__04 .shape3-top.shape3-top {
+    height: 3.1875rem;
+  }
+  #section__04 {
+    padding: 0 0 3rem;
+  }
+  section#section__04 .board {
+    margin-top: 2rem;
+  }
+  #section__05 {
+    padding: 5rem 0 0rem;
+  }
+  #section__005 {
+    padding: 3rem 0 2rem;
+  }
+  #section__06 {
+    padding: 28rem 0 5rem 0;
+  }
+  #section__02 .image__container {
+    top: 0;
+    width: 90%;
+  }
+  #section__02 {
+    padding: 37rem 0 0rem;
+  }
+
+  #section__06 .image__container {
+    top: 0;
+    width: 90%;
+  }
+  section#section__06 .row,
+  #section__02 .row {
+    position: relative;
+    z-index: 5;
+  }
+  span.text-teal {
+    font-size: 1.4rem;
+  }
+  .my__glb__btn {
+        padding: 1.5rem 3.8rem;
+  }
+  section#section__03 h3 {
+    font-size: 2.1rem;
+  }
+
+  section#section__03 .content_box p {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  section#section__03 .content_box {
+    text-align: center;
+  }
+  #section__03 .pre_column-inner_left > span {
+    color: #2b9a8c;
+    font-size: 1.9rem;
+  }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: portrait) {
+#marijuana__doctor__banner p{
+     margin: 2rem 0;
+         font-size: 2.6rem;
+}  
+span.text-teal {
+    font-size: 2rem;
+}
+#marijuana__doctor__banner h1 {
+    font-size: 4.2rem;
+    line-height: 6.2rem;
+}
+#marijuana__doctor__banner h1 span {
+    font-size: 4.5rem;
+    line-height: 3.2rem;
+}  
+  #section__01 .h2 {
+    margin-top: 2rem;
+  }
+
+  section#section__03 .pre_column-inner_left p {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  #section__02 .image__container {
+    width: 73%;
+  }
+  #section__02 {
+    padding: 67rem 0 0rem;
+  }
+  #section__06 .image__container {
+    top: 0;
+    width: 37%;
+  }
+  #section__06 {
+    padding: 2rem 0 5rem 0;
+  }
+  #section__06 .left__box {
+    width: 64%;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-device-width: 1024px) and (max-device-width: 1365px) and (orientation: portrait) {
+  #marijuana__doctor__banner {
+    height: calc(var(--fullvh) + -20vh);
+  }
+  section#marijuana__doctor__banner > .container,
+  section#marijuana__doctor__banner > .container .row {
+    height: 89%;
+    height: calc(var(--fullvh) + -36vh);
+  }
+  #section__02 .image__container {
+    top: 0;
+    margin: auto;
+    width: 41%;
+  }
+  #section__06 .image__container {
+    top: 44px;
+    bottom: 0;
+    margin: auto;
+  }
+  section#section__06 .row {
+    position: relative;
+    z-index: 5;
+  }
+}
+@media (min-width: 1200px) {
+  ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 1400px) {
+  .container {
+    width: auto;
+    max-width: 1600px;
+  }
+  #section__02 .image__container {
+    width: 34%;
+  }
+  #section__06 .image__container img {
+    width: 62%;
+  }
+  #section__06 .tab-content {
+    height: 20rem;
+  }
+  #marijuana__doctor__banner h1 {
+    font-size: 9.1rem;
+  }
+  #marijuana__doctor__banner h1 span {
+    font-size: 9.8rem;
+  }
+    #marijuana__doctor__banner p{
+    margin:2rem 0;
+  }
+}

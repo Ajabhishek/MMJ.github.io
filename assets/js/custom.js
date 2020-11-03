@@ -1,0 +1,1 @@
+AOS.init(),$(document).ready(function(){$('a[name$="_name"]').click(function(){var n=$(this).attr("name").split("_")[0];$("#"+n).prependTo("#sectionblank"),$("section#section__eight .right_content__bx").scrollTop(0)})},1500),$(function(){$("#scrollToTop").bind("click",function(){return $("html, body").animate({scrollTop:0},1200),!1})});
